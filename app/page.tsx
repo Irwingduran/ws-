@@ -78,11 +78,11 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Service Section */}
-      <section className="py-16 px-4 bg-white">
+      {/* About Section */}
+      <section className="py-16 px-4 bg-white" id="about">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-[#3B5998] mb-8">
-            The Future is Now.
+           About Us
           </h2>
 
           <p className="text-lg mb-4">
@@ -97,7 +97,7 @@ export default function Home() {
           <div className="mt-12 relative aspect-video bg-gray-200 rounded-lg overflow-hidden flex items-center justify-center">
             <Image
               src="/placeholder.svg?height=600&width=1000"
-              alt="Robotic Surgery Video Thumbnail"
+              alt="About us"
               width={1000}
               height={600}
               className="w-full h-full object-cover"
@@ -157,7 +157,7 @@ export default function Home() {
       </section>
 
       {/* Service Section */}
-      <section className="py-16 px-4 bg-[#4A90E2]">
+      <section className="py-16 px-4 bg-[#4A90E2]" id="services">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-6">Our Services</h2>
 
@@ -246,7 +246,7 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section className="py-16 px-4 bg-white">
+      <section className="py-16 px-4 bg-white" id="contact">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-[#3B5998] mb-8">Contact Us</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -301,7 +301,7 @@ export default function Home() {
       </section>
 
        {/* Reviews Section */}
-       <section className="py-16 px-4 bg-white">
+       <section className="py-16 px-4 bg-white" id="reviews">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-[#3B5998] mb-8">What Our Clients Say</h2>
           <div className="relative">
