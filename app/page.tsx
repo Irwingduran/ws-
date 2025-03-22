@@ -48,7 +48,7 @@ export default function Home() {
       <section
         className="relative bg-[#3B5998]/20 bg-blend-overlay"
         style={{
-          backgroundImage: "url('/img-bg.png')",
+          backgroundImage: "url('/img-bg.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -171,7 +171,7 @@ export default function Home() {
             <div className="bg-white m-4 rounded-lg p-8 flex flex-col md:flex-row gap-8">
               <div className="flex-shrink-0 flex items-center justify-center">
                 <Image
-                  src="/service/img4.webp"
+                  src="/service/img4.jpg"
                   alt="Gastric Sleeve Illustration"
                   width={200}
                   height={200}
@@ -179,7 +179,7 @@ export default function Home() {
                 />
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-[#3B5998] mb-4">Lipoescultura 360</h3>
+                <h3 className="text-2xl font-bold text-[#3B5998] mb-4">Liposculpture 360</h3>
                 <p className="text-gray-700">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis aliquam alias quisquam asperiores amet ipsa molestias repellendus nesciunt, impedit minima quis quam dolor, fuga iure libero tempora architecto quia voluptatibus?
                 </p>
@@ -189,7 +189,7 @@ export default function Home() {
             <div className="bg-white m-4 rounded-lg p-8 flex flex-col md:flex-row gap-8">
               <div className="flex-shrink-0 flex items-center justify-center">
                 <Image
-                  src="/service/img3.webp"
+                  src="/service/img3.jpg"
                   alt="Gastric Bypass Illustration"
                   width={200}
                   height={200}
@@ -197,7 +197,7 @@ export default function Home() {
                 />
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-[#3B5998] mb-4">Aumento de Busto</h3>
+                <h3 className="text-2xl font-bold text-[#3B5998] mb-4">Mammoplasty</h3>
                 <p className="text-gray-700">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit ratione sequi perferendis voluptas commodi doloremque, ipsa reiciendis assumenda voluptates temporibus maxime ullam eveniet illum suscipit dolore, quaerat veniam animi consequuntur.
                 </p>
@@ -215,7 +215,7 @@ export default function Home() {
                 />
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-[#3B5998] mb-4">Rinoplastia</h3>
+                <h3 className="text-2xl font-bold text-[#3B5998] mb-4">Rinoplasty</h3>
                 <p className="text-gray-700">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit ratione sequi perferendis voluptas commodi doloremque, ipsa reiciendis assumenda voluptates temporibus maxime ullam eveniet illum suscipit dolore, quaerat veniam animi consequuntur.
                 </p>
@@ -225,7 +225,7 @@ export default function Home() {
             <div className="bg-white m-4 rounded-lg p-8 flex flex-col md:flex-row gap-8">
               <div className="flex-shrink-0 flex items-center justify-center">
                 <Image
-                  src="/service/img1.webp"
+                  src="/service/img1.jpg"
                   alt="Gastric Bypass Illustration"
                   width={200}
                   height={200}
@@ -233,7 +233,7 @@ export default function Home() {
                 />
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-[#3B5998] mb-4">Manga Gastrica</h3>
+                <h3 className="text-2xl font-bold text-[#3B5998] mb-4">Gastric Sleeve</h3>
                 <p className="text-gray-700">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit ratione sequi perferendis voluptas commodi doloremque, ipsa reiciendis assumenda voluptates temporibus maxime ullam eveniet illum suscipit dolore, quaerat veniam animi consequuntur.
                 </p>

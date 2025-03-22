@@ -9,7 +9,7 @@ const Page = () => {
       <Navbar/>
 
       {/* Hero Section */}
-      <section className="relative bg-[#3B5998]/20 bg-blend-overlay" style={{ backgroundImage: "url('/img-bg.png')", backgroundSize: "cover", backgroundPosition: "center" }}>
+      <section className="relative bg-[#3B5998]/20 bg-blend-overlay" style={{ backgroundImage: "url('/service/img4.jpg')", backgroundSize: "cover", backgroundPosition: "center" }}>
         <div className="max-w-7xl mx-auto px-4 py-20 md:py-32 text-center text-black">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Transform Your Body</h1>
           <h2 className="text-2xl md:text-4xl font-semibold mb-4">Expert Lipoescultura 360 Procedures</h2>
