@@ -382,7 +382,7 @@ export default function Home() {
       {/* Gallery Section */}
       <section className="py-16 px-4 bg-[#4A90E2]">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-8">Our Gallery</h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-8">Before & After</h2>
         <div className="relative">
           <button
             onClick={() => scrollLeft("gallery-carousel")}
