@@ -20,6 +20,24 @@ export default function Home() {
     }
   };
 
+  const images = [
+   // "/gallery/img1.jpeg",
+    "/gallery/img2.jpeg",
+    "/gallery/img3.jpeg",
+    "/gallery/img4.jpeg",
+    "/gallery/img5.jpeg",
+    "/gallery/img6.jpeg",
+    "/gallery/img7.jpeg",
+    "/gallery/img8.jpeg",
+    "/gallery/img9.jpeg",
+    "/gallery/img10.jpeg",
+    "/gallery/img11.jpeg",
+    "/gallery/img12.jpeg",
+    "/gallery/img13.jpeg",
+    "/gallery/img14.jpeg",
+    "/gallery/img15.jpeg",
+  ];
+
   return (
     <div className="flex flex-col min-h-screen">
       {/* Navigation */}
@@ -28,7 +46,7 @@ export default function Home() {
           <div className="flex items-center mb-4 md:mb-0">
             <Image
               src="/placeholder.svg?height=80&width=80"
-              alt="Elias Ortiz & Company Logo"
+              alt="Logo"
               width={80}
               height={80}
               className="mr-4"
@@ -54,7 +72,7 @@ export default function Home() {
             <Link href="#" className="px-2 py-1 text-sm font-medium">
               Contact
             </Link>
-            <Link href="#" className="px-4 py-2 text-sm font-medium bg-[#F5A623] text-white rounded">
+            <Link href="#" className="px-4 py-2 text-sm font-medium bg-[#F5A623] text-white rounded-xl">
               Make an Appointment
             </Link>
           </nav>
@@ -65,12 +83,12 @@ export default function Home() {
       <section
         className="relative bg-[#3B5998]/20 bg-blend-overlay"
         style={{
-          backgroundImage: "url('/placeholder.svg?height=600&width=1200')",
+          backgroundImage: "url('/img-bg.png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
-        <div className="max-w-7xl mx-auto px-4 py-20 md:py-32 text-center text-white">
+        <div className="max-w-7xl mx-auto px-4 py-20 md:py-32 text-center text-black">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Serenity & Company</h1>
           <h2 className="text-2xl md:text-4xl font-semibold mb-4">Specialists</h2>
           <h3 className="text-xl md:text-3xl font-medium mb-12">in Mexico, Mexico</h3>
@@ -187,7 +205,7 @@ export default function Home() {
             <div className="bg-white rounded-lg p-8 flex flex-col md:flex-row gap-8">
               <div className="flex-shrink-0 flex items-center justify-center">
                 <Image
-                  src="/placeholder.svg?height=200&width=200"
+                  src="/service/img4.webp"
                   alt="Gastric Sleeve Illustration"
                   width={200}
                   height={200}
@@ -205,7 +223,7 @@ export default function Home() {
             <div className="bg-white rounded-lg p-8 flex flex-col md:flex-row gap-8">
               <div className="flex-shrink-0 flex items-center justify-center">
                 <Image
-                  src="/placeholder.svg?height=200&width=200"
+                  src="/service/img3.webp"
                   alt="Gastric Bypass Illustration"
                   width={200}
                   height={200}
@@ -223,7 +241,7 @@ export default function Home() {
             <div className="bg-white rounded-lg p-8 flex flex-col md:flex-row gap-8">
               <div className="flex-shrink-0 flex items-center justify-center">
                 <Image
-                  src="/placeholder.svg?height=200&width=200"
+                  src="/service/img2.jpg"
                   alt="Gastric Bypass Illustration"
                   width={200}
                   height={200}
@@ -241,7 +259,7 @@ export default function Home() {
             <div className="bg-white rounded-lg p-8 flex flex-col md:flex-row gap-8">
               <div className="flex-shrink-0 flex items-center justify-center">
                 <Image
-                  src="/placeholder.svg?height=200&width=200"
+                  src="/service/img1.webp"
                   alt="Gastric Bypass Illustration"
                   width={200}
                   height={200}
@@ -363,40 +381,40 @@ export default function Home() {
 
       {/* Gallery Section */}
       <section className="py-16 px-4 bg-[#4A90E2]">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-8">Our Gallery</h2>
-          <div className="relative">
-            <button
-              onClick={() => scrollLeft('gallery-carousel')}
-              className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white text-gray-500 p-2 rounded-full shadow-md z-10"
-            >
-              &#10094;
-            </button>
-            <button
-              onClick={() => scrollRight('gallery-carousel')}
-              className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white text-gray-500 p-2 rounded-full shadow-md z-10"
-            >
-              &#10095;
-            </button>
-            <div
-              id="gallery-carousel"
-              className="flex overflow-x-auto space-x-4 scrollbar-hide"
-            >
-              {[1, 2, 3, 4, 5].map((_, index) => (
-                <div key={index} className="flex-shrink-0 w-64 h-64 bg-gray-200 rounded-lg overflow-hidden">
-                  <Image
-                    src="/placeholder.svg?height=256&width=256"
-                    alt="Gallery Image"
-                    width={256}
-                    height={256}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              ))}
-            </div>
+      <div className="max-w-5xl mx-auto">
+        <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-8">Our Gallery</h2>
+        <div className="relative">
+          <button
+            onClick={() => scrollLeft("gallery-carousel")}
+            className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white text-gray-500 p-2 rounded-full shadow-md z-10"
+          >
+            &#10094;
+          </button>
+          <button
+            onClick={() => scrollRight("gallery-carousel")}
+            className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white text-gray-500 p-2 rounded-full shadow-md z-10"
+          >
+            &#10095;
+          </button>
+          <div
+            id="gallery-carousel"
+            className="flex overflow-x-auto space-x-4 scrollbar-hide"
+          >
+            {images.map((image, index) => (
+              <div key={index} className="flex-shrink-0 w-64 h-64 bg-gray-200 rounded-lg overflow-hidden">
+                <Image
+                  src={image}
+                  alt={`Gallery Image ${index + 1}`}
+                  width={256}
+                  height={256}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            ))}
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
       {/* Footer */}
       <footer className="bg-[#3B5998] py-8 px-4 text-white">
@@ -422,7 +440,7 @@ export default function Home() {
               Contact
             </Link>
           </nav>
-          <p className="text-sm mt-4 md:mt-0">© 2023 Serenity & Company. All rights reserved.</p>
+          <p className="text-sm mt-4 md:mt-0">© 2025 Delta by Imagen Medica. All rights reserved.</p>
         </div>
       </footer>
     </div>
