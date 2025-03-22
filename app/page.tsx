@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Play, DollarSign, Calendar, Building2, MessageCircle, MapPin, Mail, Phone, Star } from "lucide-react";
 import { Button } from "../components/ui/button";
+import Navbar from "../components/navbar";
 
 export default function Home() {
   const scrollLeft = (id: string) => {
@@ -41,43 +42,7 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Navigation */}
-      <header className="bg-white py-4 px-4 border-b">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
-          <div className="flex items-center mb-4 md:mb-0">
-            <Image
-              src="/placeholder.svg?height=80&width=80"
-              alt="Logo"
-              width={80}
-              height={80}
-              className="mr-4"
-            />
-            <div>
-              <h1 className="text-[#3B5998] text-xl font-semibold">Serenity & Company</h1>
-              <p className="text-[#4A90E2] text-sm">MEXICANS SPECIALISTS</p>
-            </div>
-          </div>
-          <nav className="flex flex-wrap justify-center gap-2 md:gap-4">
-            <Link href="#" className="px-2 py-1 text-sm font-medium">
-              Home
-            </Link>
-            <Link href="#" className="px-2 py-1 text-sm font-medium">
-              About
-            </Link>
-            <Link href="#" className="px-2 py-1 text-sm font-medium">
-              Services
-            </Link>
-            <Link href="#" className="px-2 py-1 text-sm font-medium">
-              Reviews
-            </Link>
-            <Link href="#" className="px-2 py-1 text-sm font-medium">
-              Contact
-            </Link>
-            <Link href="#" className="px-4 py-2 text-sm font-medium bg-[#F5A623] text-white rounded-xl">
-              Make an Appointment
-            </Link>
-          </nav>
-        </div>
-      </header>
+      <Navbar/>
 
       {/* Hero Section */}
       <section
@@ -201,8 +166,9 @@ export default function Home() {
             surgeries.
           </p>
 
-          <div className="space-y-8">
-            <div className="bg-white rounded-lg p-8 flex flex-col md:flex-row gap-8">
+          <div className="space-y-10">
+            <a href="/service1">
+            <div className="bg-white m-4 rounded-lg p-8 flex flex-col md:flex-row gap-8">
               <div className="flex-shrink-0 flex items-center justify-center">
                 <Image
                   src="/service/img4.webp"
@@ -218,9 +184,9 @@ export default function Home() {
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis aliquam alias quisquam asperiores amet ipsa molestias repellendus nesciunt, impedit minima quis quam dolor, fuga iure libero tempora architecto quia voluptatibus?
                 </p>
               </div>
-            </div>
-
-            <div className="bg-white rounded-lg p-8 flex flex-col md:flex-row gap-8">
+            </div></a>
+            <a href="/service2">
+            <div className="bg-white m-4 rounded-lg p-8 flex flex-col md:flex-row gap-8">
               <div className="flex-shrink-0 flex items-center justify-center">
                 <Image
                   src="/service/img3.webp"
@@ -236,9 +202,9 @@ export default function Home() {
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit ratione sequi perferendis voluptas commodi doloremque, ipsa reiciendis assumenda voluptates temporibus maxime ullam eveniet illum suscipit dolore, quaerat veniam animi consequuntur.
                 </p>
               </div>
-            </div>
-
-            <div className="bg-white rounded-lg p-8 flex flex-col md:flex-row gap-8">
+            </div></a>
+            <a href="/service3">
+            <div className="bg-white m-4 rounded-lg p-8 flex flex-col md:flex-row gap-8">
               <div className="flex-shrink-0 flex items-center justify-center">
                 <Image
                   src="/service/img2.jpg"
@@ -254,9 +220,9 @@ export default function Home() {
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit ratione sequi perferendis voluptas commodi doloremque, ipsa reiciendis assumenda voluptates temporibus maxime ullam eveniet illum suscipit dolore, quaerat veniam animi consequuntur.
                 </p>
               </div>
-            </div>
-
-            <div className="bg-white rounded-lg p-8 flex flex-col md:flex-row gap-8">
+            </div></a>
+            <a href="/service4">
+            <div className="bg-white m-4 rounded-lg p-8 flex flex-col md:flex-row gap-8">
               <div className="flex-shrink-0 flex items-center justify-center">
                 <Image
                   src="/service/img1.webp"
@@ -272,7 +238,9 @@ export default function Home() {
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit ratione sequi perferendis voluptas commodi doloremque, ipsa reiciendis assumenda voluptates temporibus maxime ullam eveniet illum suscipit dolore, quaerat veniam animi consequuntur.
                 </p>
               </div>
-            </div>
+            </div></a>
+
+            
           </div>
         </div>
       </section>
@@ -382,7 +350,7 @@ export default function Home() {
       {/* Gallery Section */}
       <section className="py-16 px-4 bg-[#4A90E2]">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-8">Before & After</h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-8">Our Gallery</h2>
         <div className="relative">
           <button
             onClick={() => scrollLeft("gallery-carousel")}
